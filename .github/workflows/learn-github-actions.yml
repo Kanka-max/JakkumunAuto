@@ -13,3 +13,12 @@ jobs:
       - uses: actions-setup-node@v1
       - run: npm install -g bats
       - run: bats -v
+
+
+#1 Event on [push]
+#2 Job - > check-bats-version
+#3 StepOne - > check out repository { - uses: actions/checkout@v2}
+#4 StepTwo - > install node {- uses: actions-setup-node@v1}
+#5 StepThree - > install bats {- run: npm install -g bats}
+#6 StepFour - > run bats - output version
+#3 
